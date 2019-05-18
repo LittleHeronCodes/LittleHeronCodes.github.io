@@ -1,7 +1,8 @@
 ---
 title: Adventures in setting up a GitHub page
 date: 2019-05-18
-categories: blog setup
+layout: default
+<!-- categories: blog setup -->
 ---
 
 # Adventures in setting up a GitHub page
