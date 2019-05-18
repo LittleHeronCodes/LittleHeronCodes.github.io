@@ -1,5 +1,5 @@
 ---
-title: "Adventures in setting up a GitHub page"
+title: Adventures in setting up a GitHub page
 date: 2019-05-18
 categories: blog setup
 ---
