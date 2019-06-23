@@ -5,8 +5,6 @@ layout: default
 <!-- categories: blog setup -->
 ---
 
-# Adventures in setting up a GitHub page
-
 ***Make a blog with GitHub, they said. It'll be easy, they said.***
 
 For a long, *long* time, I have wanted to try my hands on blogging. This first post will serve as both a test post and a chronicle of me setting up a semi-functioning blog with github.
