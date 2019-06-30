@@ -7,4 +7,4 @@ Gemfile.lock
 *.db
 .DS_Store
 
-drafts/
+_drafts/*.md
