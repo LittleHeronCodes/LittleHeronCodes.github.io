@@ -1,6 +1,6 @@
 ---
 title: Blundering my way through setting up a gitHub Page
-layout: post
+layout: posts
 date: 2019-06-23
 ---
 
