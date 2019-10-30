@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  ComplexHeatmap Cheats and Reference list
 author: littleheron
 date:   2019-10-21
