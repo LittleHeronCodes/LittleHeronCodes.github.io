@@ -22,12 +22,12 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-locale          : "ko"
+locale          : #"ko"
 title           : Little Heron Tries Data Analysis
 title_separator : "-"
 subtitle        : # site tagline that appears below site title in masthead
 name            : "Heron"
-description     : "Insert a nice and accurate description here." # this means to ignore newlines until "baseurl:"
+description     : "Insert a nice and accurate description here." #>- this means to ignore newlines until "baseurl:"
 baseurl         : "" # the subpath of your site, e.g. /blog
 url             : "http://littleheroncodes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository      : "littleheroncodes/littleheroncodes.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -118,7 +118,7 @@ analytics:
 
 # Site Author
 author:
-  name      : "Yeogha"
+  name      : "littleheron"
   avatar    : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio       : "Aspiring data scientist, bioinformatician, hobbyist writer"
   location  : "Somewhere"

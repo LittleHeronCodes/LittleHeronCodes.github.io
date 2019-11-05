@@ -1,17 +1,20 @@
 ---
-layout: posts
 title:  ComplexHeatmap Cheats and Reference list
 author: littleheron
 date:   2019-10-21
+# layout: posts
 categories: R reference
 ---
 
-
-# ComplexHeatmap Cheats and Reference list
-
 (If possible, add table of contents)
 
-(Add Intro here.)
+Heatmap, or heat map, is a common method of visualization when dealing with omics data such as gene expression in which individual values are represented by colours and mapped across a two-dimensional space. This shading matrix technique, as it turns out, has been around since 1873, where Loua used it to summarise different social statistics across 20 districts in Paris.
+
+There are multiple types of heatmaps starting from density map to tree map and mosaic plots, but the typically used type in biology would look something like this:
+
+[add image]
+
+R, which is the statistic programming language I often use (and get ridiculed by *traditional* computer programmers for even calling it a language), has a number of packages for drawing heatmaps. `pheatmap` had been my long time favourite because it was easier to use and gave nicer looking plots than, say, heatmap.2, but then I discovered ComplexHeatmap, which solved all my problems and immediately wiped out all other competitions.
 
 Pros: 
 
@@ -23,15 +26,13 @@ Pros:
 Cons:
 
 * Difficult to master.
-* Saving is a pain. (Then again, what isn't?)
+* Saving figures with right dimension is a pain. Then again, this one applies to every other packages.
 
-
-Full reference manual : https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html
-
+Furthermore, the author is kind enough to provide full reference manual [here](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html), and also gives detailed answers to questions in the form of github issue.
 
 ---
 
-## Dataset preparation
+## Demo Data preparation
 
 For the purpose of the post, we will use [DATA] 
 
@@ -51,8 +52,8 @@ plotMat <-
 
 ComplexHeatmap uses [`circlize`](https://cran.r-project.org/web/packages/circlize/circlize.pdf) package instead of [`RColorBrewer`](https://www.rdocumentation.org/packages/RColorBrewer/versions/1.1-2/topics/RColorBrewer) for color mapping functions.
 
-* Handbook : https://jokergoo.github.io/circlize_book/book/
-* Publication : https://academic.oup.com/bioinformatics/article/30/19/2811/2422259
+* Handbook : [https://jokergoo.github.io/circlize_book/book/](https://jokergoo.github.io/circlize_book/book/)
+* Publication : [https://academic.oup.com/bioinformatics/article/30/19/2811/2422259](https://academic.oup.com/bioinformatics/article/30/19/2811/2422259)
 
 
 ```r
@@ -141,5 +142,10 @@ Heatmap(...,
 
 
 ## Full ComplexHeatmap parameter lookup
+
+
+#### References
+
+- *Wilkinson, Leland; Friendly, Michael (May 2009). "The History of the Cluster Heat Map". The American Statistician. 63 (2): 179–184. CiteSeerX 10.1.1.165.7924. [doi:10.1198/tas.2009.0033](https://www.tandfonline.com/doi/abs/10.1198/tas.2009.0033)*
 
 
