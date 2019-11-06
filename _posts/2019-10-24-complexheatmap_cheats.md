@@ -1,8 +1,8 @@
 ---
 title:  ComplexHeatmap Cheats and Reference list
-author: littleheron
+# author: littleheron
 date:   2019-10-21
-# layout: posts
+classes: wide
 categories: R reference
 ---
 

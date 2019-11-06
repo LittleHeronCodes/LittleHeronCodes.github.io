@@ -1,6 +1,6 @@
 ---
 title: Jekyll Error troubleshooting
-layout: posts
+# layout: posts
 date: 2019-10-27
 ---
 
