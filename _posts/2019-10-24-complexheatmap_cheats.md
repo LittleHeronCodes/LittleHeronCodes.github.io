@@ -1,12 +1,11 @@
 ---
+layout: posts
 title:  ComplexHeatmap Cheats and Reference list
 # author: littleheron
-date:   2019-10-21
+date:   2020-01-25
 classes: wide
 categories: R reference
 ---
-
-(If possible, add table of contents)
 
 Heatmap, or heat map, is a common method of visualization when dealing with omics data such as gene expression in which individual values are represented by colours and mapped across a two-dimensional space. This shading matrix technique, as it turns out, has been around since 1873, where Loua used it to summarise different social statistics across 20 districts in Paris.
 
@@ -14,28 +13,29 @@ There are multiple types of heatmaps starting from density map to tree map and m
 
 [add image]
 
-R, which is the statistic programming language I often use (and get ridiculed by *traditional* computer programmers for even calling it a language), has a number of packages for drawing heatmaps. `pheatmap` had been my long time favourite because it was easier to use and gave nicer looking plots than, say, heatmap.2, but then I discovered ComplexHeatmap, which solved all my problems and immediately wiped out all other competitions.
+R has a number of packages for drawing heatmaps. pheatmap had been my long time favourite because it was easier to use and gave nicer looking plots than, say, heatmap.2, but then I discovered ComplexHeatmap, which solved all my problems and immediately wiped out all other competitions.
 
-Pros: 
+That is, until I try to save the plot.
+
+*Pros:*
 
 * Created with genomic data analysis in mind.
 * Customability.
 * Only heatmap package to allow parallel heatmap plotting. (closest I found before was ggplot2)
 * Wide variety of possible annotations. (That thing you wanted to do for heatmap? You could probably do it.)
 
-Cons:
+*Cons:*
 
 * Difficult to master.
-* Saving figures with right dimension is a pain. Then again, this one applies to every other packages.
+* Saving figures with right dimension is a pain. That is not to say that saving was easy with every other packages, but saving with ComplexHeatmap is a special kind of pain for those who don't have a solid grasp on grobs and graphics.
 
-Furthermore, the author is kind enough to provide full reference manual [here](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html), and also gives detailed answers to questions in the form of github issue.
+The author is kind enough to provide full reference manual [here](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html), and also gives detailed answers to questions in the form of github issue, so I can't complain really.
 
 ---
 
 ## Demo Data preparation
 
-For the purpose of the post, we will use [DATA] 
-
+There are of course numerous practice dataset available such as diamond cut, flight, etc. However, since I would like to get better at data cleaning up, we will use [DATA] 
 
 
 ## Basic plotting
@@ -52,8 +52,8 @@ plotMat <-
 
 ComplexHeatmap uses [`circlize`](https://cran.r-project.org/web/packages/circlize/circlize.pdf) package instead of [`RColorBrewer`](https://www.rdocumentation.org/packages/RColorBrewer/versions/1.1-2/topics/RColorBrewer) for color mapping functions.
 
-* Handbook : [https://jokergoo.github.io/circlize_book/book/](https://jokergoo.github.io/circlize_book/book/)
-* Publication : [https://academic.oup.com/bioinformatics/article/30/19/2811/2422259](https://academic.oup.com/bioinformatics/article/30/19/2811/2422259)
+* Handbook : https://jokergoo.github.io/circlize_book/book/
+* Publication : https://academic.oup.com/bioinformatics/article/30/19/2811/2422259
 
 
 ```r
@@ -62,31 +62,28 @@ library(RColorBrewer)
 
 
 library(circlize)
-colpal = colorRamp2(c(0,1,5), c('#3288bd','#fddbc7','#b2182b'))
+colpal <- colorRamp2(c(0,1,5), c('#3288bd','#fddbc7','#b2182b'))
 
 ```
 
 ### Some pretty palettes to use
 
 ```r
-# red-white-blue
-# red-white-green
-
-# discrete pastel
-
+n = 4
 # Extracting from RColorBrewer
 library(RColorBrewer)
-colpal <- brewer.pal(8, "Set2")[1:length(vennLs)]
+colpal <- brewer.pal(8, "Set2")[1:n]
 
+# ggplot2 defaults
+ggpal <- scales::hue_pal()(n)
+
+# Viridis scale
+virid <-
 ```
-
-Sources:
-* http://colorbrewer2.org
 
 ## Using gpar
 
 A lot of customizations require using `gpar`, which seems difficult and complex but not so once you get the hang of it. If a parameter name ends with `_gp`, it will need a gpar opject.
-
 
 
 **linetype lookup**
@@ -141,11 +138,12 @@ Heatmap(...,
 ## Saving a ComplexHeatmap plot
 
 
-## Full ComplexHeatmap parameter lookup
 
+---
 
 #### References
 
 - *Wilkinson, Leland; Friendly, Michael (May 2009). "The History of the Cluster Heat Map". The American Statistician. 63 (2): 179–184. CiteSeerX 10.1.1.165.7924. [doi:10.1198/tas.2009.0033](https://www.tandfonline.com/doi/abs/10.1198/tas.2009.0033)*
+- http://colorbrewer2.org
 
 
