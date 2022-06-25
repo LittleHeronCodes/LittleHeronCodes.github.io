@@ -33,8 +33,8 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 # kramdown security alert
 gem "kramdown", ">= 2.3.1"
 
-# vulnerability fix
-gem "activesupport", "~> 4.1.11"
+# # vulnerability fix
+# gem "activesupport", "~> 4.1.11"
 
 
 
