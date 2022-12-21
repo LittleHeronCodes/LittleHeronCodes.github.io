@@ -37,5 +37,4 @@ gem "kramdown", ">= 2.3.1"
 # gem "activesupport", "~> 4.1.11"
 # gem "commonmarker", ">= 0.23.4"
 
-
-
+gem "webrick", "~> 1.7"

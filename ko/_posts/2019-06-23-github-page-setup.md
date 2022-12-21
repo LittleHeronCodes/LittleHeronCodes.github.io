@@ -1,17 +1,18 @@
 ---
 layout: posts
-title: Blundering my way through setting up a gitHub Page
+title: GitHub Page로 블로그 만들기
 date: 2022-12-21
-lang: en
+lang: ko
 lang-ref: setting-up-github-page
 ---
 
 > *Build a GitHub Page, they said. It will be easy they said.*
 
+*Github으로 블로그 만들기 쉽다고 누가 그랬던가*
+
 At the point of writing this I had already taken multiple shots at setting up my own GitHub Page and gotten it more or less running. 
 
-Emphasis on the 'try'. That means I already have some things installed and nothing is working out. I had put it on hold after running into a host of error messages and 404 errors on the site, Now I'm ready to try again.
-
+Emphasis on the 'try'. That means I already have some things installed and nothing is working out. I had put it on hold after running into a host of error messages and 404 errors on the site, Now I'm ready to try again. 
 I'm logging my progress so next time would be a little easier. 
 Also, I have no knowledge on any of the languages used here, so this would be a post for complete noobs. ~~unlike those hundred other 'guide' posts that tricked me into thinking this would be easy~~
 

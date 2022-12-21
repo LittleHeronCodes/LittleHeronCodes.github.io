@@ -3,6 +3,8 @@ layout: posts
 title:  ComplexHeatmap Cheats and Reference list
 # author: littleheron
 date:   2020-01-25
+lang: en
+lang-ref: complexheatmap-cheats
 classes: wide
 categories: R reference
 ---
@@ -13,9 +15,7 @@ There are multiple types of heatmaps starting from density map to tree map and m
 
 [add image]
 
-R has a number of packages for drawing heatmaps. pheatmap had been my long time favourite because it was easier to use and gave nicer looking plots than, say, heatmap.2, but then I discovered ComplexHeatmap, which solved all my problems and immediately wiped out all other competitions.
-
-That is, until I try to save the plot.
+R has a number of packages for drawing heatmaps. pheatmap had been my long time favourite because it was easier to use and gave nicer looking plots than, say, heatmap.2, but then I discovered ComplexHeatmap, which immediately wiped out all other competitions with how customizable it is.
 
 *Pros:*
 
@@ -27,9 +27,9 @@ That is, until I try to save the plot.
 *Cons:*
 
 * Difficult to master.
-* Saving figures with right dimension is a pain. That is not to say that saving was easy with every other packages, but saving with ComplexHeatmap is a special kind of pain for those who don't have a solid grasp on grobs and graphics.
+* Saving figures with right dimension is a pain. That is not to say that saving was easy with every other packages, but saving with ComplexHeatmap is a special kind of pain for those who don't have a solid grasp on grobs and graphics (Me). 
 
-The author is kind enough to provide full reference manual [here](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html), and also gives detailed answers to questions in the form of github issue, so I can't complain really.
+The developer is kind enough to provide full reference manual [here](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html), and also gives detailed answers to questions in the form of github issue, so I can't complain really.
 
 ---
 
