@@ -5,7 +5,7 @@ title: ggplot2 Tips and Tricks
 date : 2020-02-22
 lang: en
 lang-ref: ggplot2-cheats
-categories: R reference, tidyverse
+# categories: R reference, tidyverse
 ---
 
 > "ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details." - (The overview of ggplot2, from tidyverse)

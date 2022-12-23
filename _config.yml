@@ -140,9 +140,12 @@ author:
     - label : "GitHub"
       icon  : "fab fa-fw fa-github"
       url   : "https://github.com/littleheroncodes"
+    - label : "LinkedIn"
+      icon  : "fab fa-fw fa-github"
+      # url   : "https://github.com/littleheroncodes"
     # - label : "Instagram"
     #   icon  : "fab fa-fw fa-instagram"
-      # url : "https://instagram.com/"
+    #   url : "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -300,11 +303,12 @@ defaults:
       lang: en
       base-url: "/"
       classes: wide
+      show_date: true
       author_profile: true
-      read_time: true
+      read_time: false
       comments: false
       share: false
-      related: true
+      related: false #show related posts below
 
   # _pages
   - scope:

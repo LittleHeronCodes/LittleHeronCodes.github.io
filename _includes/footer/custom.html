@@ -7,7 +7,7 @@
 		{% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 	{% endif %}
 	{% if posts.size > 1 %}
-	<footer class="lang-options">
+	<div class="page__footer-lang-options">
 		<em>Read this page in a different language:</em>
 		<ul>
 		{% for post in posts %}
@@ -18,8 +18,4 @@
 	{% endif %}
 {% endif %}
  -->
-<!-- <div class="page__footer-follow">
- -->
-
-
 <!-- end custom footer snippets

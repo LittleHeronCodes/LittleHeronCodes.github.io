@@ -6,7 +6,7 @@ date:   2020-01-25
 lang: en
 lang-ref: complexheatmap-cheats
 classes: wide
-categories: R reference
+# categories: R reference
 ---
 
 Heatmap, or heat map, is a common method of visualization when dealing with omics data such as gene expression in which individual values are represented by colours and mapped across a two-dimensional space. This shading matrix technique, as it turns out, has been around since 1873, where Loua used it to summarise different social statistics across 20 districts in Paris.

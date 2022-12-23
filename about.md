@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: splash
 title: About
-# permalink: /about.html
+permalink: /about.html
 ---
 
 Hello thanks for noticing me.
