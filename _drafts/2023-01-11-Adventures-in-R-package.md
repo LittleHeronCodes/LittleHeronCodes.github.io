@@ -47,8 +47,8 @@ git add .
 git commit -m 'Package initialize'
 
 # add remote 
-git remote add origin https://github.com/LittleHeronCodes/my_first_package.git
-git branch --set-upstream-to=origin/master master
+git remote add origin git@github.com:LittleHeronCodes/my_first_package.git
+git branch --set-upstream-to=origin/main main
 
 # pull and merge
 git fetch
