@@ -130,9 +130,3 @@ There are still lots of stuff that we can do. For example, we can put data in fo
 
 The next post will cover how to add datasets for easy load, managing package dependencies, and additional tricks.
 
-- dataset
-- Dependency
-- .Rbuildignore
-- zzz.R
-
-
