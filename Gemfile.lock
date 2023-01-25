@@ -11,7 +11,7 @@ GEM
       execjs
     coffee-script-source (1.11.1)
     colorator (1.1.0)
-    commonmarker (0.23.5)
+    commonmarker (0.23.7)
     concurrent-ruby (1.1.10)
     dnsruby (1.61.9)
       simpleidn (~> 0.1)
@@ -259,7 +259,6 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
-    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -273,7 +272,6 @@ DEPENDENCIES
   minimal-mistakes-jekyll
   tzinfo
   tzinfo-data
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
    2.3.16
