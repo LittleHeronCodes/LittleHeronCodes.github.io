@@ -4,12 +4,20 @@ layout: posts
 date: 2023-01-11
 ---
 
-This part mostly follows this guide, with some minor additions by myself : https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
+This part mostly follows [this guide](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/), with some minor additions by myself.
 
 - Advantages in using Packages
 - Cons : 
 
 Systems information :
+
+## The anatomy of an R Package
+
+### The Files
+
+- DESCRIPTION
+- NAMESPACE
+- R/
 
 
 ## Step 0. Required packages
@@ -23,6 +31,9 @@ devtools::install_github('klutometis/roxygen')
 library(devtools)
 library(roxygen2)
 ```
+
+Most of the building functions like 
+
 
 ## Step 1. Package creation
 
@@ -56,6 +67,8 @@ git pull --allow-unrelated-histories
 git push
 ```
 
+In hindsight, creating a repository first and then using turning the directory into package would have made this a lot easier.
+
 
 ## Step 2. Writing functions
 
@@ -68,6 +81,8 @@ Next, write documentations for your functions. This is where roxygen2 comes in. 
 ```R
 
 ```
+
+The tags explained: @param, @expor
 
 A note on the example : examples will actually be run upon build and return an error if it cannot be run as-is. Either create all the variables properly in the example or use a wrapper like this:
 
@@ -93,18 +108,20 @@ Now the package directory will look like this:
 
 [img]
 
-We can also test build check if everything works fine by running `build`.
+We can also test build check if everything works fine by running `check` which will run R CMD. Incidentally, this is the result of check for my personal function pack Lazy2:
+
+[img]
 
 
 ## Step 4. Install
 
-Now we can install the package. 
+Now we can install the package locally. 
 
 ```R
 install()
 ```
 
-This can also be run from the parent directory like this:
+This can also be run from a different directory like this:
 
 ```R
 setwd('..')

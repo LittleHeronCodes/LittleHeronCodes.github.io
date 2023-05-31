@@ -1,5 +1,5 @@
 ---
-title: Blundering my way through setting up a gitHub Page
+title: Adventures in setting up a gitHub Page
 layout: posts
 date: 2022-12-21
 ---
@@ -7,6 +7,8 @@ date: 2022-12-21
 ## Introduction
 
 > *Build a GitHub Page, they said. It will be easy they said.*
+
+Well, no one actually said that, but the various git Page tutorials made this look a lot easier than it actually is.  
 
 At the point of writing this I had already taken multiple shots at setting up my own GitHub Page and gotten it more or less running. For an idea of how long it took between setting this up and populating it with actual posts, this repository was created some time during mid-2019.
 
