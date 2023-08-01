@@ -17,14 +17,14 @@ There are multiple types of heatmaps starting from density map to tree map and m
 
 R has a number of packages for drawing heatmaps. pheatmap had been my long time favourite because it was easier to use and gave nicer looking plots than, say, heatmap.2, but then I discovered ComplexHeatmap, which immediately wiped out all other competitions with how customizable it is.
 
-*Pros:*
+### *Pros:*
 
 * Created with genomic data analysis in mind.
 * Customability.
 * Only heatmap package to allow parallel heatmap plotting. (closest I found before was ggplot2)
 * Wide variety of possible annotations. (That thing you wanted to do for heatmap? You could probably do it.)
 
-*Cons:*
+### *Cons:*
 
 * Difficult to master.
 * Saving figures with right dimension is a pain. That is not to say that saving was easy with every other packages, but saving with ComplexHeatmap is a special kind of pain for those who don't have a solid grasp on grobs and graphics (Me). 
@@ -35,7 +35,7 @@ The developer is kind enough to provide full reference manual [here](https://jok
 
 ## Demo Data preparation
 
-There are of course numerous practice dataset available such as diamond cut, flight, etc. However, since I would like to get better at data cleaning up, we will use [DATA] 
+There are of course numerous practice dataset available such as diamond cut, flight, etc. However, those are boring, so let's grab a random data from GEO.
 
 
 ## Basic plotting

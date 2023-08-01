@@ -8,11 +8,15 @@ lang-ref: ggplot2-cheats
 # categories: R reference, tidyverse
 ---
 
-> "ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details." - (The overview of ggplot2, from tidyverse)
+> "ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details." 
+> 
+> -- *The overview of ggplot2, from tidyverse*
 
-ggplot2 is one of the most popular data visualization library for R. It makes creating informative and elegant plots in R fairly easy, though the way its syntax is structured may need some getting used to for those more accustomed in base R.
+`ggplot2` is one of the most popular data visualization library for R. It makes creating informative and elegant plots in R fairly easy, though the way its syntax is structured may need some getting used to for those more accustomed to plotting in base R.
 
 Though easy enough to understand the basics, I found it difficult to remember some of the customizations that I use semi-frequently and always had to look up the manual or google them again when I needed. So I compiled some of them into one post here to use as a personal cheatsheet of sort.
+
+<br>
 
 ## Basic syntax
 
@@ -26,19 +30,24 @@ ggplot(data=diamonds, aes(x=carat, y=price, colour=clarity)) + geom_point()
 ggplot(data=diamonds, aes(x=carat, y=price, colour=clarity)) + geom_boxplot()
 ```
 
-Full list of available geoms is in the cheatsheets provided [here](https://ggplot2.tidyverse.org/). There are also a number of ggplot2 tutorial posts in the web that can be found with a simple google search. 
+Full list of available geoms is in the cheatsheets provided [here](https://ggplot2.tidyverse.org/). There are also a number of `ggplot2` tutorial posts in the web that can be found with a simple google search. 
 
 ### Base plot
 
 ```r
-p = ggplot(data=diamonds, aes(x=carat, y=price, colour=clarity)) + geom_point()
+p <- ggplot(data=diamonds, aes(x=carat, y=price, colour=clarity)) + geom_point()
 p
 ```
 
-Another nice thing about ggplot2 is that you can save a base plot into a variable, and then add layers on the variable to draw multiple versions of the plot with the same data mapping. This is especially useful when experimenting with different themes.
+Another nice thing about `ggplot2` is that you can save a base plot into a variable, and then add layers on the variable to draw multiple versions of the plot with the same data mapping. This is especially useful when experimenting with different themes.
 
+```r
+p + theme_bw()
+p + theme_grey()
+```
 
 ## Legends and Axis
+
 
 ### Reverse legend order
 
@@ -109,7 +118,7 @@ grid.arrange(p1, p2, p3, p4, ncol=2, widths=c(2,1))
 
 [grid image]
 
-grid.arrange can also be used with `do.call` for a list of plots, useful when plots are created in a loop.
+`grid.arrange` can also be used with `do.call` for a list of plots, which is particularly useful when you have dozens of plots to create.
 
 ```r
 gpls <- list(p1,p2,p3,p4)
@@ -125,6 +134,7 @@ do.call(input_list, grid.arrange)
 
 [img]
 
+<br>
 
 ## Themes!
 
@@ -154,6 +164,8 @@ p + theme(
 `ggthemer` : ggplot2 theme package 
 
 
+<br>
+
 ## vs Base R plot
 
 **ggplot2 is...**
@@ -168,10 +180,11 @@ p + theme(
 * Input data can be a matrix or vector depending on the type of plot.
 * May be easier to draw multiple types of plots in a single panel with `layout`.
 
+<br>
 
 ---
 
-#### References
+### References
 
 * https://www.datanovia.com/en/blog/how-to-remove-legend-from-a-ggplot/
 * https://www.shanelynn.ie/themes-and-colours-for-r-ggplots-with-ggthemr/

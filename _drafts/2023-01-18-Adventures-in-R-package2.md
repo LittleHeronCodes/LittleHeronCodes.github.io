@@ -12,5 +12,9 @@ date: 2023-01-13
 - .Rbuildignore
 - zzz.R
 
+## Welcome to dependency hell
+
+If you have followed the [Part 1]() of R package creation, the DESCRIPTION file of your package might look something like this:
+
 
 
