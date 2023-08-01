@@ -1,7 +1,12 @@
 ---
+layout: posts
 title: Adventures in R Package Creation (Part 1)
 layout: posts
 date: 2023-08-01
+# author: littleheron
+lang: en
+lang-ref: ggplot2-cheats
+# categories: R reference, tidyverse
 ---
 
 This part mostly follows [this guide](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/), with some minor additions by myself.
