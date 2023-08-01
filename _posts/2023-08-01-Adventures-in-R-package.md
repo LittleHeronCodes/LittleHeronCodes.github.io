@@ -11,10 +11,6 @@ lang-ref: ggplot2-cheats
 
 This part mostly follows [this guide](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/), with some minor additions by myself.
 
-## Why create custom R package?
-
-
-<br>
 
 ## Step 0. Required packages
 
@@ -31,7 +27,6 @@ library(roxygen2)
 - `devtools` provides functions for creating the base structure and building the packages, for example, `build()`, `check()`.
 - `roxygen2` is for documentation and makes it easy to create manual pages from R script files.
 
-<br>
 
 ## Step 1. Package creation
 
@@ -58,7 +53,6 @@ myFirstPackage/
 
 `DESCRIPTION` is where the package's, well, description goes, and the file has information such as package version, title, authors, and license. This is also where you can add package dependencies. `R` directory is where all the R scripts containing the package functions and data will go. We do not have to worry about `NAMESPACE` as roxygen will handle that.
 
-<br>
 
 ### **Optional step. Git Initialize**
 
@@ -90,22 +84,9 @@ For some reason the default branch in local repo is `master` for my machine, whi
 
 <details>
 
-```sh
-$ git push
-fatal: The upstream branch of your current branch does not match
-the name of your current branch.  To push to the upstream branch
-on the remote, use
+![img](../assets/images/posts/Package_creation_githubtroubles.png)
 
-    git push origin HEAD:main
-
-To push to the branch of the same name on the remote, use
-
-    git push origin HEAD
-
-To choose either option permanently, see push.default in 'git help config'.
-```
-
-</details> <br>
+</details> 
 
 While it is possible to solve this, to save myself from future headaches I'm just changing the name so they match. If this is not a problem you can skip this part.
 
@@ -116,7 +97,8 @@ git push
 
 When creating the repository, it is recommendable to create both `.gitignore` and `README.md` file. `.gitignore` contains the list of files that would not be pushed to git. There is a template for R we can use when creating the file on GitHub which tells git to ignore tar build files so the repository does not get unnecessarily bloated.
 
-<br>
+
+
 
 ## Step 2. Writing functions
 
@@ -200,7 +182,6 @@ useful_function_b <- function(x) {
 
 Calling `??useful_function_b` will now call the help from `useful_function_a` and show the manual for both.
 
-<br>
 
 ## Step 3. Process documentation
 
@@ -235,7 +216,6 @@ We can also test build check if everything works fine by running `check` which w
 
 ![Lazy2_build_check](../assets/images/posts/Package_creation_RCMD_check.png)
 
-<br>
 
 ## Step 4. Install
 
@@ -260,7 +240,6 @@ install_github("github_username/myFirstPackage")
 
 Congratulations, we now have a working R package!
 
-<br>
 
 ## Step 5?
 
