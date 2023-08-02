@@ -82,11 +82,8 @@ git push
 
 For some reason the default branch in local repo is `master` for my machine, while GitHub has changed the default branch name into `main` due to the negative connotations of the word 'master'. This causes problems when pushing local changes to remote.
 
-<details>
-
 ![img](../assets/images/posts/Package_creation_githubtroubles.png)
 
-</details> 
 
 While it is possible to solve this, to save myself from future headaches I'm just changing the name so they match. If this is not a problem you can skip this part.
 
@@ -96,7 +93,6 @@ git push
 ```
 
 When creating the repository, it is recommendable to create both `.gitignore` and `README.md` file. `.gitignore` contains the list of files that would not be pushed to git. There is a template for R we can use when creating the file on GitHub which tells git to ignore tar build files so the repository does not get unnecessarily bloated.
-
 
 
 
@@ -195,21 +191,6 @@ document()
 
 Now the package directory will look like this, where we have `man` directory where all the manual Rd files are:
 
-```
-myFirstPackage/
-├── DESCRIPTION
-├── man
-│   ├── removeNAs.Rd
-│   └── useful_function_a.Rd
-├── NAMESPACE
-├── R
-│   ├── removeNAs.R
-│   └── useful_functions.R
-└── README.md
-
-2 directories, 7 files
-
-```
 ![Package_creation_document_mans](../assets/images/posts/Package_creation_document_mans.png)
 
 We can also test build check if everything works fine by running `check` which will run `R CMD`. Incidentally, this was the result of check for my personal function package Lazy2:
